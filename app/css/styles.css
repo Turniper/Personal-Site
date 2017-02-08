@@ -1,11 +1,28 @@
 /* app css stylesheet */
+
+h1 { 
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.navbar-collapse.in {
+overflow: hidden;
+}
+
 .hoverwell:hover {
   background-color: #485563;
   cursor: pointer;
 }
 
 .container {
-  padding-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .pointable {
@@ -31,4 +48,12 @@ button {
 }
 .toast-warning {
   background-color: #f89406;
+}
+
+
+body { 
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    padding-left: 20px;   
 }

@@ -1,17 +1,17 @@
-Angular 2 Fundamentals Course
+Matt Hegarty's personal site
 ========================
-This is the getting started package for the Pluralsight course on Angular 2 Fundamentals found here: http://app.pluralsight.com/courses/angular-fundamentals
+Initial template courtesy of the pluralsight angular 2 fundamentals course.
 
-**Course Status**
-
-The course is currently up-to-date.
+http://app.pluralsight.com/courses/angular-fundamentals
 
 
-Getting Started
+
+
+Build instructions:
 ---------------
-Follow along with the course linked above. To start the server:
 
-```
+Run:
 npm install
-npm start
-```
+npm started
+
+If this didn't work, find someone who knows angular.
