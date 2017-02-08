@@ -6,5 +6,8 @@ import { Component } from '@angular/core'
 })
 
 export class CodeProjectComponent {
-
+    project = {
+        name: 'Test',
+        icon: '/app/assets/test.png'
+    }
 }

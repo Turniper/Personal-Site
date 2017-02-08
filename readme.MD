@@ -12,6 +12,6 @@ Build instructions:
 
 Run:
 npm install
-npm started
+npm start
 
 If this didn't work, find someone who knows angular.
