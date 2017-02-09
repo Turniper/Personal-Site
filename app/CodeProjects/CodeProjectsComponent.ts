@@ -6,8 +6,13 @@ import { Component } from '@angular/core'
 })
 
 export class CodeProjectComponent {
-    project = {
-        name: 'Test',
-        icon: '/app/assets/test.png'
+    projects = [
+    {
+        name: 'Test1',
+        icon: '/app/assets/Turnip.jpg'
     }
+    
+    
+    
+    ]
 }
