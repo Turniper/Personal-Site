@@ -8,24 +8,22 @@ import { Component } from '@angular/core'
 export class CodeProjectComponent {
     projects = [
     {
-        name: 'Test1',
-        icon: '/app/assets/Turnip.jpg',
-        Description: 'Numba 1'
+        name: 'This Website',
+        icon: '/app/assets/images/Turnip.jpg',
+        github: 'https://github.com/Turniper/Personal-Site',
+        description: 'Built with Angular2 and Bootstrap.'
     },
     {
-        name: 'Test2',
-        icon: '/app/assets/Turnip.jpg',
-        Description: 'Numba 2'
+        name: 'UAV Debris Detector',
+        icon: '/app/assets/images/Turnip.jpg',
+        github: 'https://github.com/Turniper/UAV-Debris-Detector',
+        description: 'A program designed to batch process UAV Imagery taken at the site of disasters in order to identify debris and other features of interest to first responders.'
     },
     {
-        name: 'Test3',
-        icon: '/app/assets/Turnip.jpg',
-        Description: 'Numba 3'
+        name: 'USNG Grid Utility',
+        icon: '/app/assets/images/Turnip.jpg',
+        github: '/app/assets/Turnip.jpg',
+        description: 'Numba 3'
     }
     ]
-    project1 =  {
-        name: 'Test1',
-        icon: '/app/assets/Turnip.jpg',
-        Description: 'Numba 1'
-    }
 }
