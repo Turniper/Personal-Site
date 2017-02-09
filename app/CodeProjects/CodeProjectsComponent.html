@@ -1,8 +1,6 @@
 <div class="container-fluid">
   <h1>Hello World!</h1>
     <div class="row">
-      <CodeProjEntry></CodeProjEntry>
-      <CodeProjEntry></CodeProjEntry>
-      <CodeProjEntry></CodeProjEntry>
+      <CodeProjEntry *ngFor="let project of projects" [project]="project"></CodeProjEntry>
     </div>
 </div>
