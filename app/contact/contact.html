@@ -1,44 +1,45 @@
-<form #f="ngForm" novalidate (ngSubmit)="send(f.value, f.valid)">
-    <!-- we will place our fields here -->
+<div class="container-fluid">
+    <div class ="row">
+        <div class="well">
+            <form #f="ngForm" novalidate (ngSubmit)="send(f.value, f.valid)">
+                <!--name-->
+                <div>
+                    <label>Name</label>
+                    <!--bind name to ngModel, it's required with minimum 5 characters-->
+                    <input type="text" class= "form-control" name="name" [(ngModel)]="form.name" 
+                        #name="ngModel" required minlength="5">
+                    <!--show error only when field is not valid & it's dirty or form submited-->
+                    <small [hidden]="name.valid || (name.pristine && !f.submitted)">
+                        Name is required (minimum 5 characters).
+                    </small>
+                </div>
 
-    <!--name-->
-    <div>
-        <label>Name</label>
-        <!--bind name to ngModel, it's required with minimum 5 characters-->
-        <input type="text" 
-            name="name" [(ngModel)]="form.name" 
-            #name="ngModel" required minlength="5">
-        <!--show error only when field is not valid & it's dirty or form submited-->
-        <small [hidden]="name.valid || (name.pristine && !f.submitted)">
-            Name is required (minimum 5 characters).
-        </small>
+                <!--email-->
+                <div>
+                    <label>Email Address</label>
+                    <!--bind name to ngModel, it's required with minimum 5 characters-->
+                    <input type="text" class= "form-control" name="email" [(ngModel)]="form.email" 
+                        #email="ngModel" required minlength="5">
+                    <!--show error only when field is not valid & it's dirty or form submited-->
+                    <small [hidden]="email.valid || (email.pristine && !f.submitted)">
+                        Email is required (minimum 5 characters).
+                    </small>
+                </div>
+
+                <!--message-->
+                <div>
+                    <label>Message</label>
+                    <!--bind name to ngModel, it's required with minimum 5 characters-->
+                    <input type="text" class= "form-control" name="message" [(ngModel)]="form.message" 
+                        #message="ngModel" required minlength="5">
+                    <!--show error only when field is not valid & it's dirty or form submited-->
+                    <small [hidden]="message.valid || (email.pristine && !f.submitted)">
+                        Message is required (minimum 5 characters).
+                    </small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </div>
-
-    <!--email-->
-    <div>
-        <label>Email Address</label>
-        <!--bind name to ngModel, it's required with minimum 5 characters-->
-        <input type="text" 
-            name="email" [(ngModel)]="form.email" 
-            #email="ngModel" required minlength="5">
-        <!--show error only when field is not valid & it's dirty or form submited-->
-        <small [hidden]="email.valid || (email.pristine && !f.submitted)">
-            Email is required (minimum 5 characters).
-        </small>
-    </div>
-
-    <!--message-->
-    <div>
-        <label>Message</label>
-        <!--bind name to ngModel, it's required with minimum 5 characters-->
-        <input type="text" 
-            name="message" [(ngModel)]="form.message" 
-            #email="ngModel" required minlength="5">
-        <!--show error only when field is not valid & it's dirty or form submited-->
-        <small [hidden]="email.valid || (email.pristine && !f.submitted)">
-            Message is required (minimum 5 characters).
-        </small>
-    </div>
-
-    <button type="submit">Submit</button>
-</form>
+</div>

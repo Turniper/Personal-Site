@@ -12,9 +12,9 @@ export class ContactComponent implements OnInit {
     ngOnInit() {
         this.form = {
             submitted: false,
-            message: "red",
-            email: "fed@doom",
-            name: "Manfred Elizabeth"
+            message: "Well? What did you want to tell me?",
+            email: "doom@latvia.org",
+            name: "I know you have one. Put it here."
         }
     }
 
