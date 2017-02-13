@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { IBloggable } from './blogmodel'
 
 @Component({
     selector: 'post',

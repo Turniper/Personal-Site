@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { RouterModule, Routes } from '@angular/router'
+import { FormsModule } from '@angular/forms'
 
 //Components
 import { MainComponent } from "./MainComponent"
@@ -15,7 +16,7 @@ import { appRoutes } from './routes'
 
 
 @NgModule({
-    imports: [BrowserModule, RouterModule.forRoot(appRoutes) ],
+    imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [MainComponent, CodeProjectComponent, NavBarComponent, AboutComponent, ArtComponent, CodeEntry, ContactComponent],
     bootstrap: [MainComponent]
 })
