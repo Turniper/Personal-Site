@@ -9,13 +9,14 @@ import { NavBarComponent } from "./nav/navbar"
 import { AboutComponent } from "./about/about"
 import { ArtComponent } from "./art/art"
 import { CodeEntry } from './CodeProjects/Entry/CodeEntry'
+import { ContactComponent } from './contact/contact'
 
 import { appRoutes } from './routes'
 
 
 @NgModule({
     imports: [BrowserModule, RouterModule.forRoot(appRoutes) ],
-    declarations: [MainComponent, CodeProjectComponent, NavBarComponent, AboutComponent, ArtComponent, CodeEntry],
+    declarations: [MainComponent, CodeProjectComponent, NavBarComponent, AboutComponent, ArtComponent, CodeEntry, ContactComponent],
     bootstrap: [MainComponent]
 })
 
